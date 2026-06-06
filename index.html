@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SaberKart | متجر إلكتروني عصري</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="SaberKart home">
+        <span class="brand-mark">S</span>
+        <span>
+          <strong>SaberKart</strong>
+          <small>تسوّق بذكاء</small>
+        </span>
+      </a>
+      <form class="search" id="searchForm" role="search">
+        <input id="searchInput" type="search" placeholder="ابحث عن هاتف، لابتوب، ملابس أو أثاث" aria-label="البحث عن المنتجات" />
+        <button type="submit">بحث</button>
+      </form>
+      <nav class="quick-actions" aria-label="روابط المستخدم">
+        <button class="ghost-btn" type="button">تسجيل الدخول</button>
+        <a href="#seller">كن بائعًا</a>
+        <a href="#support">الدعم</a>
+        <button class="cart-btn" type="button" aria-live="polite">🛒 السلة <span id="cartCount">0</span></button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="delivery-strip" aria-label="معلومات التوصيل والعروض">
+        <span>📍 اختر موقع التوصيل</span>
+        <span>🚚 توصيل مجاني للطلبات فوق 99$</span>
+        <span>🛡️ دفع آمن واسترجاع خلال 7 أيام</span>
+      </section>
+
+      <section class="category-bar" aria-label="الأقسام">
+        <a href="#phones">الهواتف</a>
+        <a href="#electronics">الإلكترونيات</a>
+        <a href="#fashion">الأزياء</a>
+        <a href="#home">المنزل</a>
+        <a href="#appliances">الأجهزة</a>
+        <a href="#beauty">الجمال</a>
+        <a href="#books">الكتب</a>
+        <a href="#sports">الرياضة</a>
+      </section>
+
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">عروض نهاية الأسبوع</p>
+          <h1>كل ما تحتاجه في متجر واحد بتجربة سريعة وسهلة</h1>
+          <p>واجهة عربية مستوحاة من متاجر التجارة الإلكترونية الكبرى: بحث، أقسام، عروض، منتجات مميزة، وسلة تفاعلية.</p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#deals">تصفح العروض</a>
+            <a class="secondary-btn" href="USER_GUIDE.md">دليل الاستخدام</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="عرض مميز">
+          <span class="discount">خصم 45%</span>
+          <div class="product-emoji">📱</div>
+          <h2>هاتف Saber X Pro</h2>
+          <p>شاشة AMOLED، كاميرا 108MP، وشحن سريع.</p>
+          <strong>من 499$</strong>
+        </div>
+      </section>
+
+      <section class="promo-grid" id="deals">
+        <article class="promo-card blue">
+          <span>إلكترونيات</span>
+          <h2>سماعات، ساعات ذكية وباور بانك</h2>
+          <p>خصومات تبدأ من 25%</p>
+        </article>
+        <article class="promo-card orange">
+          <span>موضة الصيف</span>
+          <h2>قمصان، أحذية وحقائب</h2>
+          <p>قطع مختارة أقل من 29$</p>
+        </article>
+        <article class="promo-card green">
+          <span>المنزل الذكي</span>
+          <h2>مكانس، قلايات وأجهزة مطبخ</h2>
+          <p>اشترِ الآن وادفع لاحقًا</p>
+        </article>
+      </section>
+
+      <section class="section-head">
+        <div>
+          <p class="eyebrow">الأكثر طلبًا</p>
+          <h2>منتجات مقترحة لك</h2>
+        </div>
+        <select id="categoryFilter" aria-label="فلترة حسب القسم">
+          <option value="all">كل الأقسام</option>
+          <option value="phones">هواتف</option>
+          <option value="electronics">إلكترونيات</option>
+          <option value="fashion">أزياء</option>
+          <option value="home">منزل</option>
+        </select>
+      </section>
+
+      <section class="products" id="products" aria-live="polite"></section>
+
+      <section class="service-grid" id="support">
+        <article>
+          <strong>24/7</strong>
+          <span>خدمة عملاء طوال اليوم</span>
+        </article>
+        <article>
+          <strong>+50K</strong>
+          <span>منتج جاهز للبيع</span>
+        </article>
+        <article>
+          <strong>7 أيام</strong>
+          <span>استرجاع واستبدال</span>
+        </article>
+        <article id="seller">
+          <strong>بائعون</strong>
+          <span>لوحة مبسطة لإضافة المتاجر لاحقًا</span>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h3>SaberKart</h3>
+        <p>نموذج متجر إلكتروني جاهز للتطوير إلى نظام حقيقي مع بوابات دفع، إدارة مخزون، وتسجيل مستخدمين.</p>
+      </div>
+      <div>
+        <h4>الأقسام</h4>
+        <a href="#products">العروض</a>
+        <a href="#support">الدعم</a>
+        <a href="USER_GUIDE.md">دليل الاستخدام</a>
+      </div>
+      <div>
+        <h4>تواصل معنا</h4>
+        <p>support@saberkart.example</p>
+        <p>© 2026 SaberKart</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
