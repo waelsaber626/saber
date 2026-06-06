@@ -1,1 +1,1 @@
-# saber
+npx skills add -y https://docs.stripe.com
